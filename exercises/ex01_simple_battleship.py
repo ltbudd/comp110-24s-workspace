@@ -10,10 +10,7 @@ result = ""
 
 # User Input - Pick boat location
 p1_loc = input("Pick a secret boat location between 1 and 4: ")
-if p1_loc.isnumeric() == False:
-    print("Error! " + p1_loc + " is invalid. Please enter a valid number.")
-    exit()
-elif int(p1_loc) < 1:
+if int(p1_loc) < 1:
     print("Error! " + str(p1_loc) + " too low!")
     exit()
 elif int(p1_loc) > 4:
@@ -22,10 +19,7 @@ elif int(p1_loc) > 4:
 
 # User Input - Guess boat location
 p2_loc = input("Guess a number between 1 and 4: ")
-if p2_loc.isnumeric() == False:
-    print("Error! " + p1_loc + " is invalid. Please enter a valid number.")
-    exit()
-elif int(p2_loc) < 1:
+if int(p2_loc) < 1:
     print("Error! " + str(p1_loc) + " too low!")
     exit()
 elif int(p2_loc) > 4:

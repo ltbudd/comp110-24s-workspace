@@ -16,9 +16,27 @@
 #z = 9/y
 #print(z)
 
-age: int = int(input("What is your age?"))
-if age <= 12:
-    price: int = 5
-elif age <= 60:
-    price: int = 10
-print(price)
+# age: int = int(input("What is your age?"))
+# if age <= 12:
+#     price: int = 5
+# elif age <= 60:
+#     price: int = 10
+# print(price)
+
+# x: list[float] = [1.0, 2.0]
+# y: list[float] = [3.0, 4.0]
+# y = x
+# x[0] = 3.0
+# print(x)
+# print(y)
+
+def double(x: int) -> int:
+    return x * 2
+
+def double_display(y: int):
+    print(y * 2)
+
+double_display(2)
+    
+if __name__ == "__main__":
+    print(double(3))
