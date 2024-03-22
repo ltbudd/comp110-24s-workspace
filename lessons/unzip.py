@@ -8,6 +8,7 @@ __author__ = "730648114"
 
 
 def get_keys(book: dict[str, int]) -> list[str]:
+    """"Signature."""
     kbook: list[str] = list()
     for key in book:
         kbook.append(key)
@@ -18,6 +19,7 @@ def get_keys(book: dict[str, int]) -> list[str]:
 
 
 def get_values(book: dict[str, int]) -> list[int]:
+    """Signature."""
     kbook: list[int] = list()
     for key in book:
         kbook.append(book[key])

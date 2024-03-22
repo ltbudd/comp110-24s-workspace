@@ -30,13 +30,22 @@
 # print(x)
 # print(y)
 
-def double(x: int) -> int:
-    return x * 2
+# def double(x: int) -> int:
+#     return x * 2
 
-def double_display(y: int):
-    print(y * 2)
+# def double_display(y: int):
+#     print(y * 2)
 
-double_display(2)
+# double_display(2)
     
-if __name__ == "__main__":
-    print(double(3))
+# if __name__ == "__main__":
+#     print(double(3))
+
+def odd_and_even(a:list[int]) -> list[int]:
+    b:list[int] = list()
+    for i in range(len(a)):
+        if i%2 == 0:
+            if a[i] % 2 != 0:
+                b.append(a[i])
+    return(b)
+print(odd_and_even([2,3,4,5]))
