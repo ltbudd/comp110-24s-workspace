@@ -1,6 +1,8 @@
 """Functions that implement sorting algorithms."""
 
-__author__ = ""
+__author__ = "730648114"
+
+
 
 def insertion_sort(x: list[int]) -> None:
     """Basic insertion sort algorithm.
