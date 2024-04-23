@@ -41,11 +41,32 @@
 # if __name__ == "__main__":
 #     print(double(3))
 
-def odd_and_even(a:list[int]) -> list[int]:
-    b:list[int] = list()
-    for i in range(len(a)):
-        if i%2 == 0:
-            if a[i] % 2 != 0:
-                b.append(a[i])
-    return(b)
-print(odd_and_even([2,3,4,5]))
+#def odd_and_even(a:list[int]) -> list[int]:
+#    b:list[int] = list()
+#    for i in range(len(a)):
+#        if i%2 == 0:
+#            if a[i] % 2 != 0:
+#                b.append(a[i])
+#    return(b)
+#print(odd_and_even([2,3,4,5]))
+
+import turtle
+
+# Create a turtle object
+t = turtle.Turtle()
+
+# Set the speed of the turtle
+t.speed(1)
+
+# Move turtle to the starting point
+t.penup()
+t.goto(0, -100)  # Adjust the y-coordinate according to the desired radius
+t.setheading(270)
+t.pendown()
+
+# Draw the bottom half of the semicircle
+radius = 100
+t.circle(radius, 180)  # Negative angle to draw in the opposite direction
+
+# Keep the window open until it's closed manually
+turtle.mainloop()
